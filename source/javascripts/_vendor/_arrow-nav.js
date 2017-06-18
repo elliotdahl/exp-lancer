@@ -41,6 +41,10 @@ $(document).ready(function() {
           $(this).siblings().removeClass("nav-item-active");
           $(this).addClass("nav-item-active");
         });
+        $($('.nav-list-active')).each(function(){
+          $(this).next().removeClass("nav-item-active");
+          $(this).removeClass("nav-list-active");
+        });
       }
     }
 
