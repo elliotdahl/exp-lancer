@@ -1,6 +1,5 @@
 applications:
-- name: 8gauge
+- name: exp-lancer
   memory: 128M
   instances: 1
   buildpack: staticfile_buildpack
-
