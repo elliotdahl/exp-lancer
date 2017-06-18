@@ -4,3 +4,19 @@
 .show {
   display: inherit;
 }
+
+.nav-list {
+  &.nav-list-active {
+
+  }
+  a.nav-item {
+    display: block;
+    color:black;
+  }
+  a.nav-item-active {
+    color:purple;
+  }
+  a.nav-item-selected {
+    text-decoration: underline;
+  }
+}

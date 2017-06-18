@@ -3,19 +3,25 @@ title: 8 Gauge
 ---
 
 .page
-	.grid
+	.grid.grid-nogutter
 		.col.col-fixed
 			.navigation.paxxl
 				%h1.title Elliot Dahl
-				.nav-list.ptxl.type-md
-					.nav-item Bio
-					.nav-item Work
-					.nav-item Projects
-					.nav-item Writing
-					.nav-item Connect
+				.nav-list.ptxl.type-md.nav-list-active
+					%a.nav-item  Bio
+					%a.nav-item Work
+					%a.nav-item.nav-item-active.nav-item-selected Projects
+					%a.nav-item Writing
+					%a.nav-item Connect
 		.col
 			%section
-				.section.section-bio
+				.section.section-bio.hide
 					=partial 'partials/bio.haml'
 				.section.section-work.hide
 					=partial 'partials/work.haml'
+				.section.section-projects
+					=partial 'partials/projects.haml'
+				.section.section-writing.hide
+					=partial 'partials/writing.haml'
+				.section.section-connect.hide
+					=partial 'partials/connect.haml'
